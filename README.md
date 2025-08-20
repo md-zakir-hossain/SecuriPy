@@ -8,3 +8,76 @@ Features
 ✅ Tiny logistic regression model built-in for risk scoring
 ✅ Unit tests with pytest
 ✅ Ready for containerization with Docker
+
+🚀 Quickstart
+1. Clone the repo
+git clone https://github.com/md-zakir-hossain/SecuriPy.git
+cd SecuriPy
+
+2. Install dependencies (Python 3.11+)
+python -m venv .venv
+source .venv/bin/activate   # on Linux/macOS
+.venv\Scripts\activate      # on Windows PowerShell
+
+pip install -r requirements.txt
+
+3. Run the server
+uvicorn app:app --reload
+
+
+Server runs at: http://127.0.0.1:8000
+
+4. Try it
+
+Health check
+
+curl http://127.0.0.1:8000/healthz
+
+
+Scan a website
+
+curl "http://127.0.0.1:8000/check?url=example.com"
+
+
+Or open http://127.0.0.1:8000/docs
+ for interactive Swagger UI.
+
+🧪 Run Tests
+pytest -q
+
+🐳 Docker Support
+docker build -t securipy .
+docker run -p 8000:8000 securipy
+
+📊 Example Response
+{
+  "url": "https://example.com/",
+  "status": 200,
+  "headers_present": {
+    "strict-transport-security": true,
+    "content-security-policy": false,
+    "x-content-type-options": true,
+    "x-frame-options": false,
+    "referrer-policy": true,
+    "permissions-policy": false
+  },
+  "cookie_flags_found": {
+    "secure": true,
+    "httponly": true,
+    "samesite": false
+  },
+  "uses_https": true,
+  "risk_score": 0.42
+}
+
+📌 Notes
+
+For educational/demo use only. Do not scan websites you don’t control.
+
+The ML model is intentionally simple (logistic regression with fixed weights).
+
+Extendable: swap out the feature extractor and model with a production-ready one.
+
+🔗 GitHub Link
+
+👉 https://github.com/md-zakir-hossain/SecuriPy
