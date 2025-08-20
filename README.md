@@ -4,6 +4,7 @@
 ## Features
 ✅ FastAPI-powered REST service with /check and /healthz endpoints
 ✅ Detects key HTTP security headers: HSTS, CSP, X-Frame-Options, etc.
+
 ✅ Inspects cookies for Secure, HttpOnly, SameSite flags
 ✅ Tiny logistic regression model built-in for risk scoring
 ✅ Unit tests with pytest
