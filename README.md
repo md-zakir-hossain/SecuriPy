@@ -17,38 +17,32 @@ cd SecuriPy
 2. Install dependencies (Python 3.11+) <br>
 python -m venv .venv <br>
 source .venv/bin/activate   # on Linux/macOS <br>
-.venv\Scripts\activate      # on Windows PowerShell
-
+.venv\Scripts\activate      # on Windows PowerShell <br>
 pip install -r requirements.txt
 
-3. Run the server
-uvicorn app:app --reload
-
+3. Run the server <br>
+uvicorn app:app --reload <br>
 Server runs at: http://127.0.0.1:8000
 
 4. Try it
 
-Health check
+* Health check <br>
+curl http://127.0.0.1:8000/healthz <br> <br>
 
-curl http://127.0.0.1:8000/healthz
+Scan a website <br>
+curl "http://127.0.0.1:8000/check?url=example.com" <br>
 
-
-Scan a website
-
-curl "http://127.0.0.1:8000/check?url=example.com"
-
-
-Or open http://127.0.0.1:8000/docs
+Or open http://127.0.0.1:8000/docs <br>
  for interactive Swagger UI.
 
-🧪 Run Tests
+## Run Tests
 pytest -q
 
-🐳 Docker Support
-docker build -t securipy .
+## Docker Support
+docker build -t securipy . <br>
 docker run -p 8000:8000 securipy
 
-📊 Example Response
+## Example Response
 {
   "url": "https://example.com/",
   "status": 200,
@@ -69,14 +63,11 @@ docker run -p 8000:8000 securipy
   "risk_score": 0.42
 }
 
-📌 Notes
+## Notes
 
-For educational/demo use only. Do not scan websites you don’t control.
+* For **educational/demo use only**. Do not scan websites you don’t control. <br>
+* The ML model is intentionally simple (logistic regression with fixed weights).
+* Extendable: swap out the feature extractor and model with a production-ready one.
 
-The ML model is intentionally simple (logistic regression with fixed weights).
-
-Extendable: swap out the feature extractor and model with a production-ready one.
-
-🔗 GitHub Link
-
+## GitHub Link
 👉 https://github.com/md-zakir-hossain/SecuriPy
