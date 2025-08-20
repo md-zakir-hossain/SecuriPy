@@ -10,13 +10,13 @@
 * Ready for containerization with Docker <br>
 
 ## Quickstart
-1. Clone the repo
-git clone https://github.com/md-zakir-hossain/SecuriPy.git
+1. Clone the repo <br>
+git clone https://github.com/md-zakir-hossain/SecuriPy.git <br>
 cd SecuriPy
 
-2. Install dependencies (Python 3.11+)
-python -m venv .venv
-source .venv/bin/activate   # on Linux/macOS
+2. Install dependencies (Python 3.11+) <br>
+python -m venv .venv <br>
+source .venv/bin/activate   # on Linux/macOS <br>
 .venv\Scripts\activate      # on Windows PowerShell
 
 pip install -r requirements.txt
