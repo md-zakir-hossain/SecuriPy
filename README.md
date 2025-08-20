@@ -4,13 +4,12 @@
 ## Features
 * FastAPI-powered REST service with /check and /healthz endpoints <br>
 * Detects key HTTP security headers: HSTS, CSP, X-Frame-Options, etc. <br>
+* Inspects cookies for Secure, HttpOnly, SameSite flags <br>
+* Tiny logistic regression model built-in for risk scoring <br>
+* Unit tests with pytest <br>
+* Ready for containerization with Docker <br>
 
-✅ Inspects cookies for Secure, HttpOnly, SameSite flags
-✅ Tiny logistic regression model built-in for risk scoring
-✅ Unit tests with pytest
-✅ Ready for containerization with Docker
-
-🚀 Quickstart
+## Quickstart
 1. Clone the repo
 git clone https://github.com/md-zakir-hossain/SecuriPy.git
 cd SecuriPy
@@ -24,7 +23,6 @@ pip install -r requirements.txt
 
 3. Run the server
 uvicorn app:app --reload
-
 
 Server runs at: http://127.0.0.1:8000
 
