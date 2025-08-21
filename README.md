@@ -11,36 +11,55 @@
 
 ## Quickstart
 1. Clone the repo <br>
+
+```bash
 git clone https://github.com/md-zakir-hossain/SecuriPy.git <br>
 cd SecuriPy
+```
 
 2. Install dependencies (Python 3.11+) <br>
+
+```bash
 python -m venv .venv <br>
 source .venv/bin/activate   # on Linux/macOS <br>
 .venv\Scripts\activate      # on Windows PowerShell <br>
 pip install -r requirements.txt
+```
 
 3. Run the server <br>
+
+```bash
 uvicorn app:app --reload <br>
+```
 Server runs at: http://127.0.0.1:8000
 
 4. Try it
 
 * Health check <br>
+```bash
 curl http://127.0.0.1:8000/healthz <br> <br>
+```
 
-Scan a website <br>
+* Scan a website <br>
+```bash
 curl "http://127.0.0.1:8000/check?url=example.com" <br>
+```
 
 Or open http://127.0.0.1:8000/docs <br>
  for interactive Swagger UI.
 
 ## Run Tests
-pytest -q
+
+```bash
+   pytest -q
+```
 
 ## Docker Support
+
+```bash
 docker build -t securipy . <br>
 docker run -p 8000:8000 securipy
+```
 
 ## Example Response
 
