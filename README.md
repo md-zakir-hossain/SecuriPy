@@ -3,7 +3,7 @@
 It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own or have permission** to test.
 
 ## Features
-* FastAPI-powered REST service with /check and /healthz endpoints <br>
+* FastAPI-powered REST service: */check*, */healthz* 
 * Detects key HTTP security headers: HSTS, CSP, X-Frame-Options, etc. <br>
 * Inspects cookies for Secure, HttpOnly, SameSite flags <br>
 * Tiny logistic regression model built-in for risk scoring <br>
