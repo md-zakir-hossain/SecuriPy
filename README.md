@@ -6,7 +6,7 @@ It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own
 * FastAPI-powered REST service: */check*, */healthz* 
 * Detects key headers: HSTS, CSP, X-Frame-Options, etc. 
 * Inspects cookies for *Secure*, *HttpOnly*, *SameSite* flags 
-* Built-in ML **risk scorer** (logistic regression)>
+* Built-in ML **risk scorer** (logistic regression)
 * Unit tests with **pytest**
 
 ## Quickstart
