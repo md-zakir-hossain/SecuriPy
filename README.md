@@ -1,6 +1,5 @@
 # SecuriPy — FastAPI Web Security Risk Checker
-**SecuriPy** is a lightweight FastAPI service that checks public websites for common **security headers and cookie flags**, then applies a tiny **machine-learning (logistic regression)** model to estimate a risk score.
-It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own or have permission** to test.
+**SecuriPy** is a lightweight FastAPI service that checks public websites for common **security headers and cookie flags**, then applies a tiny **machine-learning (logistic regression)** model to estimate a risk score. It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own or have permission** to test.
 
 ## Features
 * FastAPI-powered REST service: */check*, */healthz* 
@@ -13,11 +12,12 @@ It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own
 **1. Clone the repo**
 
 ```bash
-git clone https://github.com/md-zakir-hossain/SecuriPy.git <br>
+git clone https://github.com/md-zakir-hossain/SecuriPy.git
 cd SecuriPy
 ```
 
-**2. Create & activate venv** \n
+**2. Create & activate venv**   
+
 *Windows (PowerShell):*
 ```powershell
 python -m venv .venv
