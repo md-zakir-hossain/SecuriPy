@@ -24,10 +24,15 @@ python -m venv .venv
 .\.venv\Scripts\Activate
 ```
 
+*macOS/Linux:*
 ```bash
-python -m venv .venv <br>
-source .venv/bin/activate   # on Linux/macOS <br>
-.venv\Scripts\activate      # on Windows PowerShell <br>
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+**3) Install dependencies**
+
+```bash
 pip install -r requirements.txt
 ```
 
