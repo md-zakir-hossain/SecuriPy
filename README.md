@@ -10,14 +10,19 @@ It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own
 * Unit tests with **pytest**
 
 ## Quickstart
-1. Clone the repo <br>
+**1. Clone the repo**
 
 ```bash
 git clone https://github.com/md-zakir-hossain/SecuriPy.git <br>
 cd SecuriPy
 ```
 
-2. Install dependencies (Python 3.11+) <br>
+**2. Create & activate venv**
+*Windows (PowerShell):*
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate
+```
 
 ```bash
 python -m venv .venv <br>
