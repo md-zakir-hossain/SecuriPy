@@ -54,7 +54,7 @@ curl http://127.0.0.1:8000/healthz
 
 ### Scan a website <br>
 ```bash
-curl "http://127.0.0.1:8000/check?url=example.com" <br>
+curl "http://127.0.0.1:8000/check?url=example.com" 
 ```
 
 Or open http://127.0.0.1:8000/docs   
