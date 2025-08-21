@@ -43,7 +43,8 @@ docker build -t securipy . <br>
 docker run -p 8000:8000 securipy
 
 ## Example Response
-'''
+
+```bash
 {
   "url": "https://example.com/",
   "status": 200,
@@ -63,7 +64,7 @@ docker run -p 8000:8000 securipy
   "uses_https": true,
   "risk_score": 0.42
 }
-'''
+```
 
 ## Notes
 
