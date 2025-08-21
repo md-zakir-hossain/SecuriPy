@@ -1,5 +1,6 @@
-# SecuriPy
-**SecuriPy — FastAPI Web Security Risk Checker**. It is a lightweight FastAPI service that checks public websites for common security headers and cookie flags, then applies a tiny machine learning model to estimate risk. It’s non-intrusive (uses HEAD/GET requests only) and safe to run on sites you own or have permission to test.
+# SecuriPy — FastAPI Web Security Risk Checker
+**SecuriPy** is a lightweight FastAPI service that checks public websites for common **security headers and cookie flags**, then applies a tiny **machine-learning (logistic regression)** model to estimate a risk score.
+It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own or have permission** to test.
 
 ## Features
 * FastAPI-powered REST service with /check and /healthz endpoints <br>
