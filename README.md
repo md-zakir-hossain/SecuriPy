@@ -36,12 +36,14 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Run the server <br>
+**4) Run the server**
 
 ```bash
-uvicorn app:app --reload <br>
+uvicorn app:app --reload    
 ```
-Server runs at: http://127.0.0.1:8000
+
+Open: http://127.0.0.1:8000   
+Docs (Swagger): http://127.0.0.1:8000/docs
 
 4. Try it
 
