@@ -17,7 +17,7 @@ git clone https://github.com/md-zakir-hossain/SecuriPy.git <br>
 cd SecuriPy
 ```
 
-**2. Create & activate venv**
+**2. Create & activate venv** \n
 *Windows (PowerShell):*
 ```powershell
 python -m venv .venv
