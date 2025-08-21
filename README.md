@@ -60,20 +60,7 @@ curl "http://127.0.0.1:8000/check?url=example.com"
 Or open http://127.0.0.1:8000/docs   
  for interactive Swagger UI.
 
-## Run Tests
-
-```bash
-   pytest -q
-```
-
-## Docker Support
-
-```bash
-docker build -t securipy . <br>
-docker run -p 8000:8000 securipy
-```
-
-## Example Response
+ ### Example Response
 
 ```json
 {
@@ -97,11 +84,18 @@ docker run -p 8000:8000 securipy
 }
 ```
 
+## Tests
+
+```bash
+   pytest -q
+```
+
 ## Notes
 
-* For **educational/demo use only**. Do not scan websites you don’t control. <br>
-* The ML model is intentionally simple (logistic regression with fixed weights).
-* Extendable: swap out the feature extractor and model with a production-ready one.
+* Use **only** on systems you own or where you have **explicit authorization**.   
+* This tool **does not exploit** or brute-force. It performs a standard HTTP request and inspects response headers.
+* The ML model is intentionally simple (fixed-weight logistic regression) to clearly demonstrate **model integration**.
+* You can extend features or swap the model for a trained *scikit-learn* model (e.g., via *joblib*).
 
-## GitHub Link
-👉 https://github.com/md-zakir-hossain/SecuriPy
+## Repository
+https://github.com/md-zakir-hossain/SecuriPy
