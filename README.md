@@ -45,19 +45,19 @@ uvicorn app:app --reload
 Open: http://127.0.0.1:8000   
 Docs (Swagger): http://127.0.0.1:8000/docs
 
-4. Try it
+## Try it
 
-* Health check <br>
+### Health check
 ```bash
-curl http://127.0.0.1:8000/healthz <br> <br>
+curl http://127.0.0.1:8000/healthz
 ```
 
-* Scan a website <br>
+### Scan a website <br>
 ```bash
 curl "http://127.0.0.1:8000/check?url=example.com" <br>
 ```
 
-Or open http://127.0.0.1:8000/docs <br>
+Or open http://127.0.0.1:8000/docs   
  for interactive Swagger UI.
 
 ## Run Tests
