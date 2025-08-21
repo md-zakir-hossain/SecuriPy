@@ -44,7 +44,7 @@ docker run -p 8000:8000 securipy
 
 ## Example Response
 
-```bash
+```json
 {
   "url": "https://example.com/",
   "status": 200,
