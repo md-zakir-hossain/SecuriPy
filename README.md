@@ -4,11 +4,10 @@ It is non-intrusive (single *HEAD/GET* request) and intended for sites you **own
 
 ## Features
 * FastAPI-powered REST service: */check*, */healthz* 
-* Detects key HTTP security headers: HSTS, CSP, X-Frame-Options, etc. <br>
-* Inspects cookies for Secure, HttpOnly, SameSite flags <br>
-* Tiny logistic regression model built-in for risk scoring <br>
-* Unit tests with pytest <br>
-* Ready for containerization with Docker <br>
+* Detects key headers: HSTS, CSP, X-Frame-Options, etc. 
+* Inspects cookies for *Secure*, *HttpOnly*, *SameSite* flags 
+* Built-in ML **risk scorer** (logistic regression)>
+* Unit tests with **pytest**
 
 ## Quickstart
 1. Clone the repo <br>
